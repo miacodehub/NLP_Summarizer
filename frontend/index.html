@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<head>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>AI Document Summarizer</h1>
+
+    <form id="uploadForm">
+
+        <input
+            type="text"
+            id="kword"
+            name="kword"
+            placeholder="Enter keyword..."
+        />
+
+        <input
+            type="file"
+            id="fileInput"
+            multiple
+            accept=".txt"
+        />
+
+        <button type="submit">
+            Generate Summary
+        </button>
+
+    </form>
+
+    <div id="resultsBox">
+
+        <h2>Summary</h2>
+
+        <p id="summaryText"></p>
+
+        <button id="showFilesBtn">
+            Show Matching Files
+        </button>
+
+        <div id="filesContainer"></div>
+
+    </div>
+
+</body>
+
+</html>

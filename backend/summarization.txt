@@ -1,0 +1,14 @@
+Transformers -
+
+Transformer Model :
+    Used for summarziing texts.
+
+
+
+following : https://medium.com/data-science/setting-up-a-text-summarisation-project-daae41a1aaa3
+
+1 - establishing a baseline:
+    ROGUE score - metric used for measuring the quality of a text summarization Model
+                  It measures the overlap of n-grams - contiguous sequence of n items - between the model 
+                  and reference summaries
+        

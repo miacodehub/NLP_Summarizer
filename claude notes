@@ -1,0 +1,24 @@
+Got it — you want a public URL, zero cost, no infra headache. **HuggingFace Spaces is literally made for this.**
+
+Here's why it's perfect for your case:
+
+- Free hosting, no credit card
+- Public URL instantly — `huggingface.co/spaces/yourname/appname`
+- Supports FastAPI natively
+- Handles the model download automatically (no need to bundle BART yourself)
+- No Docker knowledge needed, though it supports it if you want
+
+The only catch — **BART-large-CNN is a big model (~1.6GB)**. The free tier CPU on Spaces will load it slowly (30-60 seconds cold start). It'll work, just not snappy. Options:
+
+- Use a smaller model like `sshleifer/distilbart-cnn-12-6` — much faster, quality is still decent
+- Or keep BART and just warn users about the cold start
+
+**What you'd need to do:**
+1. Fix the bugs we discussed
+2. Create a `requirements.txt`
+3. Add a simple `app.py` entry point Spaces expects
+4. Push to HuggingFace — done, live link forever
+
+No Docker, no cloud bills, no git repo for users — just a URL anyone on the planet can hit.
+
+Want me to help you set up the Spaces config files?
