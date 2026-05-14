@@ -1,0 +1,34 @@
+
+
+Next up:
+- fixing context retrieval logic in files.py so that context is meaningful enough to generate a summary
+- adding an ai summarizer - extractive?
+
+- display files if asked
+- can we compress the text - or make this whole thing optimized somehow? - maybe searching for context,         
+- improving ui
+
+v1:
+
+- uses abstractive summarization
+- uses a pretrained model to perform a summary of the text
+- Retrieval-Augmented Summarization 
+- Basic NLP inference pipeline
+
+This is more than "basic NLP pipeline" — it's a keyword-driven RAG-lite summarization API with a frontend. 
+
+v2:
+
+Manually trained model - setting up a model from scratch
+Add memory?
+https://medium.com/data-science/setting-up-a-text-summarisation-project-daae41a1aaa3
+https://github.com/huggingface/transformers/blob/v4.6.1/examples/pytorch/summarization/run_summarization.py#L503
+https://huggingface.co/spaces
+https://platform.claude.com/cookbook/capabilities-contextual-embeddings-guide
+1. Better retrieval
+2. Multiple keyword occurrences
+3. Sentence-level extraction
+4. Chunking
+5. Semantic retrieval
+6. Custom-trained summarizer
+7. Frontend rendering instead of console logs
