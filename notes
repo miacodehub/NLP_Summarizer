@@ -43,3 +43,34 @@ https://platform.claude.com/cookbook/capabilities-contextual-embeddings-guide
 5. Semantic retrieval
 6. Custom-trained summarizer
 7. Frontend rendering instead of console logs
+
+
+
+May 20:
+Improving retrieval:
+step one - building a standard RAG.
+
+
+May 24:
+files -- what if files arent in the same folder?
+maybe add a file button to upload one file at a time?
+
+
+May 25:
+So maybe - when you choose files, just have the files ready
+when they click on generate summary, then form the context and the rest of the stuff
+
+when we click on Generate summary, upload gets hit - > 
+------------------------------------------------------
+goals:
+
+get summary - yes
+get a live link on hugging face
+get an article up and running - yes
+
+
+optional:
+fix UI messages for when keyword is not entered
+when the keyword could not be found in any of the texts, it should return a message saying, keyword could not be found.
+why is it kinda slow? - bart summarizer is slow
+
