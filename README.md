@@ -25,11 +25,20 @@ So far, this application supports documents of types .docx, .txt, and .pdf.
 # Evaluation of the model
 
 # Limitations of the model
-**Small evaluation dataset:** The current evaluation uses a limited number of manually created questions and does not provide statistically significant performance measurements.
+
+**Small evaluation dataset:**
+The current evaluation uses a limited number of manually created questions and does not provide statistically significant performance measurements.
+
 **Generation quality:** FLAN-T5-small is lightweight but can produce inaccurate or poorly grounded answers, particularly when the retrieved context is ambiguous or insufficient.
+
 **Retrieval sensitivity:** Performance depends on chunk size, embedding quality, and the similarity threshold used for retrieval.
+
 **Limited context handling:** Only a small number of retrieved chunks are passed to the generation model, which can cause relevant information to be missed.
+
 **No reranking:**  Retrieved chunks are selected directly using FAISS similarity search without a dedicated reranking model.
+
 **No hallucination detection:** The system does not independently verify whether the generated answer is fully supported by the source document.
+
 **Limited document complexity:** The current ingestion pipeline primarily handles extracted text and may perform poorly with tables, images, scanned documents, or complex layouts.
+
 **Model scale:** The models were intentionally kept relatively small for local execution, which limits answer quality compared with larger instruction-tuned LLMs.
