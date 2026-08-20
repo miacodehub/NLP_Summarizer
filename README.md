@@ -15,6 +15,7 @@ This project is a lighter version of a similar idea. It's objective is to take t
 So far, this application supports documents of types .docx, .txt, and .pdf. 
 
 # Architecture
+<img width="837" height="1240" alt="arc_new" src="https://github.com/user-attachments/assets/85b87b6e-f91d-497a-9f4b-df0a3a73e689" />
 
 # Output
 
@@ -25,6 +26,12 @@ So far, this application supports documents of types .docx, .txt, and .pdf.
 # Evaluation of the model
 
 # Limitations of the model
+
+Since this is a personal project, I used smaller models for retrieval and generation. 
+
+Also, the documents used are primarily text based. This may pose as a limitation when there's documents with images and tables or other pictorial representation of data present.
+
+The following are the limitations in detail:
 
 **Small evaluation dataset:**
 The current evaluation uses a limited number of manually created questions and does not provide statistically significant performance measurements.
