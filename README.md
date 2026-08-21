@@ -23,7 +23,42 @@ So far, this application supports documents of types .docx, .txt, and .pdf.
 ## With all 3 formats
 ## When info is not present in the files
 
+
+
 # Evaluation of the model
+Evaluation focused on verifying that the system could retrieve relevant document content and generate answers grounded in that content.
+
+A small set of manually created question-answer pairs was used to test the pipeline across different document sections.
+
+The evaluation checked:
+
+Retrieval relevance: whether the correct document chunks were retrieved for a given query.
+Similarity scores: whether relevant queries produced higher semantic similarity scores.
+Answer correctness: whether the generated answer was supported by the retrieved context.
+End-to-end behavior: document upload → retrieval → answer generation.
+
+The system also exposes the retrieval similarity score with each response, making it possible to inspect whether an answer was generated from sufficiently relevant context.
+
+Note: This is a prototype evaluation rather than a statistically rigorous benchmark. A larger labeled dataset and automated metrics would be required for a formal evaluation.
+
+## Improvements
+
+While building the first version of the product, I've noticed that my application was generating incorrect answers. 
+
+For the embeddings, I was using the BGE small model. It creates 384 dimension embeddings and is specifically towards retrieval.
+
+While I thought about changing the model, its published MTEB results show a 51.68 retrieval score, versus 49.04 for e5-small-v2 and 43.81 for all-mpnet-base-v2; more importantly, BGE explicitly positions the model family for retrieval and recommends its rerankers for improving retrieval quality.
+
+For summarization, I used the FLAN-T5 model since it's a simple model that can be used for summarizations and other NLP use cases.
+However, most of the incorrectness of my application comes from this model.
+
+### Model distillation for improving generated summary
+
+BEFORE:
+
+<img width="1198" height="795" alt="image" src="https://github.com/user-attachments/assets/6b33013a-06cd-4557-b5d7-532042120266" />
+
+
 
 # Limitations of the model
 
