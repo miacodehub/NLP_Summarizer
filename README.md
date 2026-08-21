@@ -19,10 +19,13 @@ So far, this application supports documents of types .docx, .txt, and .pdf.
 
 # Output
 
-## With  single format of a file
+
 ## With all 3 formats
+<img width="1632" height="890" alt="image" src="https://github.com/user-attachments/assets/69a59fd5-6d65-46cd-bee9-d8c994f055ae" />
+
 ## When info is not present in the files
 
+<img width="1142" height="698" alt="image" src="https://github.com/user-attachments/assets/ff0f4a7b-14c6-4945-be8f-b6512822a601" />
 
 
 # Evaluation of the model
@@ -59,6 +62,8 @@ BEFORE:
 The first version of my tool used a FLAN T5 Small model for generation of a summary from retrieved contexts.
 The summary generated wasn't always accurate most of the time, as can be seen below:
 <img width="1198" height="795" alt="image" src="https://github.com/user-attachments/assets/6b33013a-06cd-4557-b5d7-532042120266" />
+
+The tool was showing the classic FLAN-T5 degenerate-repetition symptom while generating the output.
 
 So I made a few improvements to improve with the quality of answers.
 
