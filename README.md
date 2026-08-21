@@ -56,7 +56,12 @@ However, most of the incorrectness of my application comes from this model.
 
 BEFORE:
 
+The first version of my tool used a FLAN T5 Small model for generation of a summary from retrieved contexts.
+The summary generated wasn't always accurate most of the time, as can be seen below:
 <img width="1198" height="795" alt="image" src="https://github.com/user-attachments/assets/6b33013a-06cd-4557-b5d7-532042120266" />
+
+So I made a few improvements to improve with the quality of answers.
+
 
 
 
