@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Document Summarizer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>AI Document Summarizer</h1>
+
+    <form id="uploadForm">
+
+        <input
+            type="text"
+            id="query"
+            name="query"
+            placeholder="Ask a question..."
+            required
+        />
+
+        <input
+            type="file"
+            id="fileInput"
+            multiple
+            accept=".txt,.pdf,.docx"
+            required
+        />
+
+        <button type="submit">
+            Ask
+        </button>
+
+    </form>
+
+    <div id="resultsBox">
+
+        <h2>Answer</h2>
+
+        <p id="answerText"></p>
+
+        <h2>Sources</h2>
+
+        <div id="filesContainer"></div>
+
+    </div>
+
+</body>
+
+</html>
